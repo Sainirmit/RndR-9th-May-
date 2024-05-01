@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="ScansCollectionViewCell" customModule="Dr_RndR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="BCe-5T-b9p">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="220"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scan" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uqd-ky-mbZ">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="7DY-wJ-aGP"/>
+                                    <constraint firstAttribute="height" constant="180" id="Yku-kj-apF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR9-ol-ofG">
+                                <rect key="frame" x="0.0" y="190" width="180" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="hD8-Id-2ak"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="Uqd-ky-mbZ" firstAttribute="centerX" secondItem="BCe-5T-b9p" secondAttribute="centerX" id="3Lm-2i-Y2z"/>
+                            <constraint firstAttribute="trailing" secondItem="AR9-ol-ofG" secondAttribute="trailing" id="9Ai-3I-KBc"/>
+                            <constraint firstAttribute="bottom" secondItem="AR9-ol-ofG" secondAttribute="bottom" constant="10" id="A13-NV-RKd"/>
+                            <constraint firstItem="AR9-ol-ofG" firstAttribute="leading" secondItem="BCe-5T-b9p" secondAttribute="leading" id="SS1-we-Rts"/>
+                            <constraint firstItem="Uqd-ky-mbZ" firstAttribute="leading" secondItem="AR9-ol-ofG" secondAttribute="leading" id="dKB-eq-p35"/>
+                            <constraint firstItem="Uqd-ky-mbZ" firstAttribute="top" secondItem="BCe-5T-b9p" secondAttribute="top" id="dXi-SO-UsY"/>
+                            <constraint firstItem="AR9-ol-ofG" firstAttribute="top" secondItem="Uqd-ky-mbZ" secondAttribute="bottom" constant="10" id="fvJ-Us-NvZ"/>
+                            <constraint firstItem="Uqd-ky-mbZ" firstAttribute="trailing" secondItem="AR9-ol-ofG" secondAttribute="trailing" id="o4p-yj-yHh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="BCe-5T-b9p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8Z9-C3-vNC"/>
+                <constraint firstItem="BCe-5T-b9p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BDi-f7-llA"/>
+                <constraint firstAttribute="bottom" secondItem="BCe-5T-b9p" secondAttribute="bottom" id="GAH-IA-dAY"/>
+                <constraint firstItem="BCe-5T-b9p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JQf-Mo-OPs"/>
+                <constraint firstItem="BCe-5T-b9p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KL8-hx-D0T"/>
+                <constraint firstAttribute="trailing" secondItem="BCe-5T-b9p" secondAttribute="trailing" id="eoS-tO-wom"/>
+                <constraint firstAttribute="bottom" secondItem="BCe-5T-b9p" secondAttribute="bottom" id="pnJ-sK-du7"/>
+                <constraint firstAttribute="trailing" secondItem="BCe-5T-b9p" secondAttribute="trailing" id="vsm-lZ-oti"/>
+                <constraint firstItem="BCe-5T-b9p" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xyQ-Nk-jht"/>
+            </constraints>
+            <connections>
+                <outlet property="scanImageView" destination="Uqd-ky-mbZ" id="FdH-0E-JJ8"/>
+                <outlet property="scanLabelView" destination="AR9-ol-ofG" id="Ib3-DZ-wjh"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="-12"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="scan" width="1179" height="1518"/>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.1764705882" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
