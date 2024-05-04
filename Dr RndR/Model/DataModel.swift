@@ -2,6 +2,7 @@ import Foundation
 
 // Define a struct to represent a 3D model scanned with Room Plan Kit
 struct ScannedModel: Codable {
+//    let id: UUID
     let modelName: String // Name of the model
     let filePath: URL // File path to the USDZ file
     // You can add more properties specific to the scanned model
@@ -46,5 +47,5 @@ class ScannedModelManager {
     }
 }
 
-let filePath = URL(fileURLWithPath: "///private/var/mobile/Containers/Data/Application/479B16F1-198E-4F79-BBAC-5B72185C746B/tmp/Export/Room_20240503_224239.usdz")
-let anmd: () = ScannedModelManager().addScannedModel(modelName: "bedroom", filePath: filePath)
+//let filePath = URL(fileURLWithPath: "///private/var/mobile/Containers/Data/Application/479B16F1-198E-4F79-BBAC-5B72185C746B/tmp/Export/Room_20240503_224239.usdz")
+//let anmd: () = ScannedModelManager().addScannedModel(modelName: "bedroom", filePath: filePath)

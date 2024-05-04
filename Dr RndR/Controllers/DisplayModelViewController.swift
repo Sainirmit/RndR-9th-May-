@@ -12,7 +12,10 @@ class DisplayModelViewController: UIViewController {
         
         if let modelURL = modelURL {
             print("File path to print: \(modelURL)")
+            var val = FileManager.default.fileExists(atPath: modelURL.absoluteString)
+            print(val)
             displayModel(from: modelURL)
+            
         } else {
             print("No model URL provided.")
         }
@@ -39,7 +42,7 @@ class DisplayModelViewController: UIViewController {
             // Set up the scene view
             sceneView.scene = scene
             sceneView.allowsCameraControl = true
-            sceneView.backgroundColor = UIColor.white
+            sceneView.backgroundColor = UIColor.black
             sceneView.cameraControlConfiguration.allowsTranslation = false
         } catch {
             print("Error loading scene: \(error.localizedDescription)")
